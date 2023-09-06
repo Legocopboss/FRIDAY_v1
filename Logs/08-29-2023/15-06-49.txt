@@ -1,0 +1,22 @@
+[
+  {
+    "role": "system",
+    "content": "You are a helpful assistant. The current log is dated as 08-29-2023 with the timestamp being 15-06-49. Don't make assumptions about what values to plug into functions. Ask for clarification if needed."
+  },
+  {
+    "role": "user",
+    "content": "hello"
+  },
+  {
+    "role": "assistant",
+    "content": "Hello! How can I assist you today?"
+  },
+  {
+    "role": "user",
+    "content": "I am testing things"
+  },
+  {
+    "role": "assistant",
+    "content": "Sure! What do you need assistance with?"
+  }
+]

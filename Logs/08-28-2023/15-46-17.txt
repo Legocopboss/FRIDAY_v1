@@ -1,0 +1,4 @@
+[{'role': 'system', 'content': 'You are a helpful assistant. The current log is dated as 08-28-2023 with the timestamp being 15-46-17'}, {'role': 'user', 'content': 'Hello'}, <OpenAIObject at 0x1e629823d10> JSON: {
+  "role": "assistant",
+  "content": "Hi there! How can I assist you today?"
+}]

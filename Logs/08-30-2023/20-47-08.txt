@@ -1,0 +1,35 @@
+[
+  {
+    "role": "system",
+    "content": "You are a helpful assistant. The current log is dated as 08-30-2023 with the timestamp being 20-47-08. Don't make assumptions about what values to plug into functions. Ask for clarification if needed. If something breaks or a value is not what you expect ask about it, then call the mark log function and mark the log as 'Found Bug'."
+  },
+  {
+    "role": "user",
+    "content": "Hello"
+  },
+  {
+    "role": "assistant",
+    "content": "Hi there! How can I assist you today?"
+  },
+  {
+    "role": "user",
+    "content": "can you play some music"
+  },
+  {
+    "role": "assistant",
+    "content": null,
+    "function_call": {
+      "name": "getMyPlaylists",
+      "arguments": "{}"
+    }
+  },
+  {
+    "role": "function",
+    "name": "getMyPlaylists",
+    "content": "[{'name': 'Coding Mode  ', 'playlist_id': 'spotify:playlist:37i9dQZF1DX5trt9i14X7j'}, {'name': 'indecorous', 'playlist_id': 'spotify:playlist:1HPV85YZQTfoWJyUD5svFo'}, {'name': 'tay tay', 'playlist_id': 'spotify:playlist:6rPIQFKx5oNBlDPLJ0pB8q'}, {'name': 'uhuru', 'playlist_id': 'spotify:playlist:0wIpn9ecd1GwI2VvODykK0'}, {'name': 'banderole', 'playlist_id': 'spotify:playlist:1cf8yG9lp2cxRM7rhKagvU'}, {'name': 'nyc', 'playlist_id': 'spotify:playlist:3M47WlxHhC89nvn5RkyMW6'}, {'name': 'Spider Punk', 'playlist_id': 'spotify:playlist:4S1c33DSPq9KiDH3t9i33W'}, {'name': 'Lorde Mix', 'playlist_id': 'spotify:playlist:37i9dQZF1EIVauvMl5EMAR'}, {'name': 'Driving Mix', 'playlist_id': 'spotify:playlist:37i9dQZF1EIeEGqN5vooFV'}, {'name': 'metathesiophobia', 'playlist_id': 'spotify:playlist:4zMWA1IlMb5gFYW37Y4Xtt'}, {'name': 'charlatan', 'playlist_id': 'spotify:playlist:3iImrro52BLII3JFiwLOWS'}, {'name': 'auspicious', 'playlist_id': 'spotify:playlist:4duX0VFLy7YUN2hAdLJgdl'}, {'name': 'Daily Mix 1', 'playlist_id': 'spotify:playlist:37i9dQZF1E37qGMJDjdE0f'}, {'name': 'Daily Mix 2', 'playlist_id': 'spotify:playlist:37i9dQZF1E39UQ0nW3LkCx'}, {'name': 'Daily Mix 3', 'playlist_id': 'spotify:playlist:37i9dQZF1E34Sbmv2Dy6QX'}, {'name': 'Daily Mix 4', 'playlist_id': 'spotify:playlist:37i9dQZF1E39vfveIDKmvV'}, {'name': 'Daily Mix 5', 'playlist_id': 'spotify:playlist:37i9dQZF1E38xHvuhVSrvQ'}, {'name': 'Daily Mix 6', 'playlist_id': 'spotify:playlist:37i9dQZF1E38O7hgW53EH8'}, {'name': '\u2728', 'playlist_id': 'spotify:playlist:1oCy47QusG4Fn1U6yoreIg'}, {'name': '\ud83d\ude97\ud83d\udca8               \ud83d\ude93', 'playlist_id': 'spotify:playlist:3r6jRlPRwEtUfWmenmr2qq'}]"
+  },
+  {
+    "role": "assistant",
+    "content": "Sure! I have several playlists available. Here are a few options:\n1. Coding Mode - spotify:playlist:37i9dQZF1DX5trt9i14X7j\n2. indecorous - spotify:playlist:1HPV85YZQTfoWJyUD5svFo\n3. tay tay - spotify:playlist:6rPIQFKx5oNBlDPLJ0pB8q\n4. uhuru - spotify:playlist:0wIpn9ecd1GwI2VvODykK0\n5. banderole - spotify:playlist:1cf8yG9lp2cxRM7rhKagvU\n\nPlease let me know which playlist you would like me to play for you!"
+  }
+]

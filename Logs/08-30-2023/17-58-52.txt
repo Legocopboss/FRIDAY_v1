@@ -1,0 +1,43 @@
+[
+  {
+    "role": "system",
+    "content": "You are a helpful assistant. The current log is dated as 08-30-2023 with the timestamp being 17-58-52. Don't make assumptions about what values to plug into functions. Ask for clarification if needed. If something breaks or a value is not what you expect ask about it, then call the mark log function and mark the log as 'Found Bug'."
+  },
+  {
+    "role": "user",
+    "content": "Hello"
+  },
+  {
+    "role": "assistant",
+    "content": "Hi there! How can I assist you today?"
+  },
+  {
+    "role": "user",
+    "content": "I am testing things currently mind helping out?"
+  },
+  {
+    "role": "assistant",
+    "content": "Of course! I'd be happy to help you out with your testing. Please let me know what you need assistance with and I'll do my best to assist you."
+  },
+  {
+    "role": "user",
+    "content": "Can you play some music"
+  },
+  {
+    "role": "assistant",
+    "content": null,
+    "function_call": {
+      "name": "getMusicalDevices",
+      "arguments": "{}"
+    }
+  },
+  {
+    "role": "function",
+    "name": "getMusicalDevices",
+    "content": "[{'id': '1ad33dc2e68a292fd1c79f83da049e0eec5d1ede', 'is_active': True, 'is_private_session': False, 'is_restricted': False, 'name': 'iPhone', 'supports_volume': False, 'type': 'Smartphone', 'volume_percent': 100}, {'id': 'af488288f4b91ad5a0d76d6b0412d4c1cb4f8a6a', 'is_active': False, 'is_private_session': False, 'is_restricted': False, 'name': 'EDITH-V2', 'supports_volume': True, 'type': 'Computer', 'volume_percent': 100}]"
+  },
+  {
+    "role": "assistant",
+    "content": "Sure! I see that there are two musical devices available: \"iPhone\" and \"EDITH-V2\" (which is a computer). Which device would you like me to use to play the music?"
+  }
+]

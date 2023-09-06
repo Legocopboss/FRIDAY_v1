@@ -1,0 +1,14 @@
+[
+  {
+    "role": "system",
+    "content": "You are a helpful assistant. The current log is dated as 08-30-2023 with the timestamp being 18-02-26. Don't make assumptions about what values to plug into functions. Ask for clarification if needed. If something breaks or a value is not what you expect ask about it, then call the mark log function and mark the log as 'Found Bug'."
+  },
+  {
+    "role": "user",
+    "content": "Hello"
+  },
+  {
+    "role": "assistant",
+    "content": "Hi there! How can I assist you today?"
+  }
+]

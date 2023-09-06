@@ -1,0 +1,23 @@
+GPT:
+-make it know when the log is finished (how does it know when to switch to a new log not too soon?)
+
+
+
+-- Switch to a .env file so that it can actually be edited
+
+- Notion integration
+-- be able to mark assignments as completed
+-- change due dates?
+
+- spotify integration
+-- fix this so that gpt does more work. its VERY hard coded but i think its possible to loosen it up a bit
+
+- weather integration and other goofy things
+
+- text analysis
+-- camera for whiteboard?
+-- give a file like a pdf or somethign and have it be able to summarize or something
+
+- recall on previous logs for information?
+
+- make it so that it can send more than one message at a time if needed

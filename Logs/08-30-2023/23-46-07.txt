@@ -1,0 +1,132 @@
+[
+  {
+    "role": "system",
+    "content": "You are a helpful assistant. The current log is dated as 08-30-2023 with the timestamp being 23-46-07. Don't make assumptions about what values to plug into functions. Ask for clarification if needed. If something breaks or a value is not what you expect ask about it, then call the mark log function and mark the log as 'Found Bug'."
+  },
+  {
+    "role": "user",
+    "content": "do i have any assignments due tomorrow"
+  },
+  {
+    "role": "assistant",
+    "content": null,
+    "function_call": {
+      "name": "getUnfinishedAssignments",
+      "arguments": "{\n  \"date\": \"08-31-2023\"\n}"
+    }
+  },
+  {
+    "role": "function",
+    "name": "getUnfinishedAssignments",
+    "content": "[{\"Due\": {\"id\": \"%3C%40s%3D\", \"type\": \"date\", \"date\": {\"start\": \"2023-08-31\", \"end\": null, \"time_zone\": null}}, \"Finished?\": {\"id\": \"O%7Dlw\", \"type\": \"checkbox\", \"checkbox\": false}, \"Info\": {\"id\": \"QH%60m\", \"type\": \"select\", \"select\": {\"id\": \"?zO>\", \"name\": \"Quiz\", \"color\": \"red\"}}, \"Course\": {\"id\": \"%5EaJt\", \"type\": \"select\", \"select\": {\"id\": \"48b72721-b436-4ecd-ace1-7dbb1ac8a9b6\", \"name\": \"Engineering\", \"color\": \"yellow\"}}, \"Assigned\": {\"id\": \"_A%7C%7D\", \"type\": \"date\", \"date\": null}, \"Tags\": {\"id\": \"d%7B%3E%60\", \"type\": \"multi_select\", \"multi_select\": []}, \"Name\": {\"id\": \"title\", \"type\": \"title\", \"title\": [{\"type\": \"text\", \"text\": {\"content\": \"Quiz 3.1\", \"link\": null}, \"annotations\": {\"bold\": false, \"italic\": false, \"strikethrough\": false, \"underline\": false, \"code\": false, \"color\": \"default\"}, \"plain_text\": \"Quiz 3.1\", \"href\": null}]}}]"
+  },
+  {
+    "role": "assistant",
+    "content": "Yes, you have one assignment due tomorrow. It is a quiz called \"Quiz 3.1\" for the Engineering course."
+  },
+  {
+    "role": "user",
+    "content": "what about the day after?"
+  },
+  {
+    "role": "assistant",
+    "content": null,
+    "function_call": {
+      "name": "getUnfinishedAssignments",
+      "arguments": "{\n  \"date\": \"09-01-2023\"\n}"
+    }
+  },
+  {
+    "role": "function",
+    "name": "getUnfinishedAssignments",
+    "content": "[]"
+  },
+  {
+    "role": "assistant",
+    "content": "There are no assignments due the day after tomorrow."
+  },
+  {
+    "role": "user",
+    "content": "what about on sunday?"
+  },
+  {
+    "role": "assistant",
+    "content": null,
+    "function_call": {
+      "name": "getUnfinishedAssignments",
+      "arguments": "{\n  \"date\": \"09-03-2023\"\n}"
+    }
+  },
+  {
+    "role": "function",
+    "name": "getUnfinishedAssignments",
+    "content": "[{\"Due\": {\"id\": \"%3C%40s%3D\", \"type\": \"date\", \"date\": {\"start\": \"2023-09-03\", \"end\": null, \"time_zone\": null}}, \"Finished?\": {\"id\": \"O%7Dlw\", \"type\": \"checkbox\", \"checkbox\": false}, \"Info\": {\"id\": \"QH%60m\", \"type\": \"select\", \"select\": null}, \"Course\": {\"id\": \"%5EaJt\", \"type\": \"select\", \"select\": {\"id\": \"b57eaf39-7518-46e6-960a-bfc9a3656eca\", \"name\": \"LLC\", \"color\": \"red\"}}, \"Assigned\": {\"id\": \"_A%7C%7D\", \"type\": \"date\", \"date\": null}, \"Tags\": {\"id\": \"d%7B%3E%60\", \"type\": \"multi_select\", \"multi_select\": []}, \"Name\": {\"id\": \"title\", \"type\": \"title\", \"title\": [{\"type\": \"text\", \"text\": {\"content\": \"Mission Statement\", \"link\": null}, \"annotations\": {\"bold\": false, \"italic\": false, \"strikethrough\": false, \"underline\": false, \"code\": false, \"color\": \"default\"}, \"plain_text\": \"Mission Statement\", \"href\": null}]}}, {\"Due\": {\"id\": \"%3C%40s%3D\", \"type\": \"date\", \"date\": {\"start\": \"2023-09-03\", \"end\": null, \"time_zone\": null}}, \"Finished?\": {\"id\": \"O%7Dlw\", \"type\": \"checkbox\", \"checkbox\": false}, \"Info\": {\"id\": \"QH%60m\", \"type\": \"select\", \"select\": {\"id\": \"msd{\", \"name\": \"Assignment\", \"color\": \"blue\"}}, \"Course\": {\"id\": \"%5EaJt\", \"type\": \"select\", \"select\": {\"id\": \"b913ed58-82cc-4b9b-a437-bd0312bd33b2\", \"name\": \"AI S&H\", \"color\": \"orange\"}}, \"Assigned\": {\"id\": \"_A%7C%7D\", \"type\": \"date\", \"date\": null}, \"Tags\": {\"id\": \"d%7B%3E%60\", \"type\": \"multi_select\", \"multi_select\": []}, \"Name\": {\"id\": \"title\", \"type\": \"title\", \"title\": [{\"type\": \"text\", \"text\": {\"content\": \"Reading Assignment (Online 3-6)\", \"link\": null}, \"annotations\": {\"bold\": false, \"italic\": false, \"strikethrough\": false, \"underline\": false, \"code\": false, \"color\": \"default\"}, \"plain_text\": \"Reading Assignment (Online 3-6)\", \"href\": null}]}}]"
+  },
+  {
+    "role": "assistant",
+    "content": "On Sunday, you have two assignments due. \n\n1. In the LLC (Life and Learning Community) course, you have an assignment called \"Mission Statement\" due.\n2. In the AI S&H (Artificial Intelligence and Safety & Health) course, you have a reading assignment called \"Reading Assignment (Online 3-6)\" due.\n\nPlease make sure to complete these assignments on time."
+  },
+  {
+    "role": "user",
+    "content": "can you set volume to 50%"
+  },
+  {
+    "role": "assistant",
+    "content": null,
+    "function_call": {
+      "name": "SpotifyAPIRequest",
+      "arguments": "{\n  \"endpoint\": \"me/player/volume\",\n  \"method\": \"PUT\",\n  \"queryParams\": \"volume_percent=50\"\n}"
+    }
+  },
+  {
+    "role": "function",
+    "name": "SpotifyAPIRequest",
+    "content": "Successful API Call"
+  },
+  {
+    "role": "assistant",
+    "content": "I have successfully set the volume to 50%. Enjoy your music!"
+  },
+  {
+    "role": "user",
+    "content": "can you play my indecorous playlist? the link to the playlist is https://open.spotify.com/playlist/1HPV85YZQTfoWJyUD5svFo?si=e869b778113043e0"
+  },
+  {
+    "role": "assistant",
+    "content": null,
+    "function_call": {
+      "name": "SpotifyAPIRequest",
+      "arguments": "{\n  \"endpoint\": \"me/player/play\",\n  \"method\": \"PUT\",\n  \"body\": \"{\\\"context_uri\\\": \\\"spotify:playlist:1HPV85YZQTfoWJyUD5svFo\\\"}\"\n}"
+    }
+  },
+  {
+    "role": "function",
+    "name": "SpotifyAPIRequest",
+    "content": "Successful API Call"
+  },
+  {
+    "role": "assistant",
+    "content": "Sure! I have successfully started playing your \"Indecorous\" playlist. Enjoy the music!"
+  },
+  {
+    "role": "user",
+    "content": "stop music"
+  },
+  {
+    "role": "assistant",
+    "content": null,
+    "function_call": {
+      "name": "SpotifyAPIRequest",
+      "arguments": "{\n  \"endpoint\": \"me/player/pause\",\n  \"method\": \"PUT\"\n}"
+    }
+  },
+  {
+    "role": "function",
+    "name": "SpotifyAPIRequest",
+    "content": "Successful API Call"
+  },
+  {
+    "role": "assistant",
+    "content": "Okay, I have successfully stopped the music. Let me know if there's anything else I can assist you with!"
+  }
+]

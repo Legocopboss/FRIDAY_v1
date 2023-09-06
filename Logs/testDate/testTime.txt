@@ -1,0 +1,11 @@
+Query: Hello
+Response: Hi!
+Query: How is your day today?
+Response: Good how is yours?
+Query: Good
+Response: That's good
+Query: This is a test statement
+Response: Noted. Is there anything specific you would like assistance with?
+Query: Yes actually, could you mark this log file with the reason being Bug Fix?
+Response: None
+Function Call - <function markLog at 0x000001B7BF69BE20>: {'date': 'testDate', 'time': 'testTime', 'reason': 'Bug Fix'}, Log has been marked successfully

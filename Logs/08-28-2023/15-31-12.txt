@@ -1,0 +1,28 @@
+
+Response: Hi there! How can I assist you today?
+Query: Hello
+Response: Thank you for asking! As an AI assistant, I don't have feelings, but I'm here and ready to assist you. How can I help you today?
+Query: How are you today?
+Function Call - mark_log: {'date': '08-28-2023', 'time': '15-31-12', 'reason': 'Conversation ended'}, Log has been marked successfully
+Response: {
+  "id": "chatcmpl-7scGYzRHmDEzlXu8OJGeERi6obTwY",
+  "object": "chat.completion",
+  "created": 1693251162,
+  "model": "gpt-3.5-turbo-0613",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "Goodbye! If you have any more questions in the future, feel free to ask. Have a great day!"
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 162,
+    "completion_tokens": 23,
+    "total_tokens": 185
+  }
+}
+Query: quit

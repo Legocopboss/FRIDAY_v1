@@ -1,0 +1,1 @@
+[{"role": "system", "content": "You are a helpful assistant. The current log is dated as 08-28-2023 with the timestamp being 17-33-11. Don't make assumptions about what values to plug into functions. Ask for clarification if needed."}, {"role": "user", "content": "Hello"}, {"role": "assistant", "content": "Hi there! How can I assist you today?"}]
