@@ -40,7 +40,7 @@ functions = [
     },
     {
         "name": "SpotifyAPIRequest",
-        "description": "This function allows you to have full control over making requests to the spotify API. Anything relating to music will most likely run through this function. If you have questions or concerns ask, do not make too big of assumptions. Use your knowledge of the spotify API to help you with the inputs of the parameters of this function",
+        "description": "This function allows you to have full control over making requests to the spotify API. Anything relating to music will most likely run through this function. If you have questions or concerns ask, do not make too big of assumptions. Use your knowledge of the spotify API to help you with the inputs of the parameters of this function. When requesting playlists from the API make sure to set a limit of 5 at a time or else you will exceed your max amount of tokens",
         "parameters": {
             "type": "object",
             "properties": {
