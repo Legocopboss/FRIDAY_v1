@@ -1,5 +1,7 @@
 GPT:
--make it know when the log is finished (how does it know when to switch to a new log not too soon?)
+- make it know when the log is finished (how does it know when to switch to a new log not too soon?)
+- give function access to its own code from github pulls and commits so it can change things as needed
+
 
 - Put EDITH on its own server or device
 -- allow access to file system
