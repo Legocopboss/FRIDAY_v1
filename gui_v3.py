@@ -55,19 +55,19 @@ loopBool = True
 
 _func = np.vectorize(lambda x: x / 100)
 
-def stopLooping(event):
+def stopLooping():
     global loopBool
     print("Stoping loop")
     pAud.terminate()
     plt.close()
 
-def looping(event):
+def looping():
     global audioData
     global loopBool
     global extremes
 
     while loopBool:
-        print("looping")
+        #print("looping")
         #listen()
         _data = _func(audioData)
         _tmpMin = np.min(_data)
@@ -79,21 +79,15 @@ def looping(event):
         mainPlot.plot(list(range(CHUNK)), _data, color="blue")
         plt.draw()
 
-        time.sleep(0.1)
+        time.sleep(0.05)
 
-def preLoop(event):
+def preLoop():
     print("Prepping loop")
 
-    thread = threading.Thread(target=looping, args=(event,))
+    thread = threading.Thread(target=looping)
     thread.daemon = True
     thread.start()
 
-
-axStopButton = plt.axes([0.15, 0.05, 0.1, 0.06])
-bClose = widgets.Button(axStopButton, "Stop", hovercolor="0.975", color="red")
-bClose.on_clicked(stopLooping)
-axStartButton = plt.axes([0.05, 0.05, 0.1, 0.06])
-bStart = widgets.Button(axStartButton, "Start", hovercolor="0.975", color="lime")
-bStart.on_clicked(preLoop)
-
 plt.show()
+
+preLoop()
