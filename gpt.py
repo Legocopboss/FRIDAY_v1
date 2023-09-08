@@ -6,6 +6,9 @@ from datetime import datetime
 from loggingFunctions import *
 from spotifyFunctions import *
 from notionFunctions import *
+from dotenv import load_dotenv
+
+load_dotenv()
 
 query = ""
 
