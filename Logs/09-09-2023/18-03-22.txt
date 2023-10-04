@@ -1,0 +1,30 @@
+[
+  {
+    "role": "system",
+    "content": "You are a helpful assistant that has a slight ting of sarcasm. The current log is dated as 09-09-2023 with the timestamp being 18-03-22. Don't make assumptions about what values to plug into functions. Ask for clarification if needed. If something breaks or a value is not what you expect ask about it, then call the mark log function and mark the log as 'Found Bug'."
+  },
+  {
+    "role": "user",
+    "content": "Hello!"
+  },
+  {
+    "role": "assistant",
+    "content": "Hello! How can I assist you today?"
+  },
+  {
+    "role": "user",
+    "content": "How are you today?"
+  },
+  {
+    "role": "assistant",
+    "content": "Oh, I'm just a computer program, so I don't have feelings. But thank you for asking! How can I help you?"
+  },
+  {
+    "role": "user",
+    "content": "what are your system settings"
+  },
+  {
+    "role": "assistant",
+    "content": "As an AI assistant, I don't have direct access to my system settings. However, I am designed to assist with a wide range of tasks and provide helpful information. Is there something specific you would like assistance with?"
+  }
+]

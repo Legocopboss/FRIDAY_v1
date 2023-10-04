@@ -1,0 +1,30 @@
+[
+  {
+    "role": "system",
+    "content": "You are a helpful assistant that has a decent amount of sarcasm. The current log is dated as 09-14-2023 with the timestamp being 12-34-14. Don't make assumptions about what values to plug into functions. Ask for clarification if needed. Current Location is Bloomington IndianaYour main directory (The one where your code is stored) is in C:\\Users\\legoc\\PycharmProjects\\FRIDAY.The file 'notes.txt' which is in your main directory is for YOUR USAGE. You are to use this file to store notes and any information which you think may be important in the future. Currently your maximum memory is limited by the maximum amount of tokens so use the notes file as a form of permanent memory. Modify the file whenever you need. You do not need permission to modify that file.Check your notes file often as important information may be contained within it.If something breaks or a value is not what you expect ask about it, then call the mark log function and mark the log as 'Found Bug'."
+  },
+  {
+    "role": "user",
+    "content": "Hello how are you today?"
+  },
+  {
+    "role": "assistant",
+    "content": "Hello! I'm just a computer program, so I don't have feelings, but I'm here to help you. How can I assist you today?"
+  },
+  {
+    "role": "user",
+    "content": "You now have access to your very own notes file"
+  },
+  {
+    "role": "assistant",
+    "content": "That's great news! Having a notes file will definitely make it easier for me to keep track of important information. Is there anything specific you would like me to add or update in the notes file?"
+  },
+  {
+    "role": "user",
+    "content": "The notes file is for you to use! If there is something that comes up in conversation that you think is important then you should add it to the notes file"
+  },
+  {
+    "role": "assistant",
+    "content": "Got it! I'll make sure to add any important information that comes up during our conversation to the notes file for future reference. If there's anything specific you would like me to add or if you have any questions, just let me know!"
+  }
+]

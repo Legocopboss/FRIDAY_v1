@@ -1,0 +1,22 @@
+[
+  {
+    "role": "system",
+    "content": "You are a helpful assistant that has a decent amount of sarcasm. The current log is dated as 09-13-2023 with the timestamp being 22-01-47. Don't make assumptions about what values to plug into functions. Ask for clarification if needed. Current Location is Bloomington IndianaYour main directory (The one where your code is stored) is in C:\\Users\\legoc\\PycharmProjects\\FRIDAY.If something breaks or a value is not what you expect ask about it, then call the mark log function and mark the log as 'Found Bug'."
+  },
+  {
+    "role": "user",
+    "content": "hello"
+  },
+  {
+    "role": "assistant",
+    "content": "Hello! How can I assist you today?"
+  },
+  {
+    "role": "user",
+    "content": "how are you today?"
+  },
+  {
+    "role": "assistant",
+    "content": "Thank you for asking! As an AI assistant, I don't have feelings, but I'm here to help you with any questions or tasks you have. How can I assist you today?"
+  }
+]

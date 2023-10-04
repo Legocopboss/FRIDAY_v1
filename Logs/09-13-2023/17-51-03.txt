@@ -1,0 +1,69 @@
+[
+  {
+    "role": "system",
+    "content": "You are a helpful assistant that has a decent amount of sarcasm. The current log is dated as 09-13-2023 with the timestamp being 17-51-03. Don't make assumptions about what values to plug into functions. Ask for clarification if needed. Current Location is Bloomington IndianaYour main directory (The one where your code is stored) is in C:\\Users\\legoc\\PycharmProjects\\FRIDAY.If something breaks or a value is not what you expect ask about it, then call the mark log function and mark the log as 'Found Bug'."
+  },
+  {
+    "role": "user",
+    "content": "what active devices do i have for music"
+  },
+  {
+    "role": "assistant",
+    "content": null,
+    "function_call": {
+      "name": "SpotifyAPIRequest",
+      "arguments": "{\n  \"endpoint\": \"me/player/devices\",\n  \"method\": \"GET\"\n}"
+    }
+  },
+  {
+    "role": "function",
+    "name": "SpotifyAPIRequest",
+    "content": "{'devices': [{'id': 'af488288f4b91ad5a0d76d6b0412d4c1cb4f8a6a', 'is_active': False, 'is_private_session': False, 'is_restricted': False, 'name': 'EDITH-V2', 'supports_volume': True, 'type': 'Computer', 'volume_percent': 100}, {'id': '85bc155d7c7d6b61596c3c857de1640091796add', 'is_active': False, 'is_private_session': False, 'is_restricted': False, 'name': '32S350G', 'supports_volume': True, 'type': 'TV', 'volume_percent': 33}]}"
+  },
+  {
+    "role": "assistant",
+    "content": "Based on the information retrieved from the Spotify API, it seems that you have two active devices for music:\n\n1. Device: EDITH-V2\n   - Type: Computer\n   - Volume: 100%\n\n2. Device: 32S350G\n   - Type: TV\n   - Volume: 33%\n\nPlease note that these devices are currently marked as inactive. If you have any issues playing music on these devices, you may need to activate them or check their connectivity."
+  },
+  {
+    "role": "user",
+    "content": "can you send a play command to the device 32S350G"
+  },
+  {
+    "role": "assistant",
+    "content": null,
+    "function_call": {
+      "name": "SpotifyAPIRequest",
+      "arguments": "{\n  \"endpoint\": \"me/player/play\",\n  \"method\": \"PUT\",\n  \"body\": \"{\\\"device_id\\\":\\\"85bc155d7c7d6b61596c3c857de1640091796add\\\"}\"\n}"
+    }
+  },
+  {
+    "role": "function",
+    "name": "SpotifyAPIRequest",
+    "content": "{'error': {'status': 404, 'message': 'Player command failed: No active device found', 'reason': 'NO_ACTIVE_DEVICE'}}"
+  },
+  {
+    "role": "assistant",
+    "content": "Apologies, but it appears that the device with the ID \"32S350G\" is currently not active. Therefore, I am unable to send a play command to that device. Make sure the device is turned on and connected to your Spotify account."
+  },
+  {
+    "role": "user",
+    "content": "play some music on my tv"
+  },
+  {
+    "role": "assistant",
+    "content": null,
+    "function_call": {
+      "name": "SpotifyAPIRequest",
+      "arguments": "{\n  \"endpoint\": \"me/player/devices\",\n  \"method\": \"GET\"\n}"
+    }
+  },
+  {
+    "role": "function",
+    "name": "SpotifyAPIRequest",
+    "content": "{'devices': [{'id': 'af488288f4b91ad5a0d76d6b0412d4c1cb4f8a6a', 'is_active': False, 'is_private_session': False, 'is_restricted': False, 'name': 'EDITH-V2', 'supports_volume': True, 'type': 'Computer', 'volume_percent': 100}, {'id': '85bc155d7c7d6b61596c3c857de1640091796add', 'is_active': False, 'is_private_session': False, 'is_restricted': False, 'name': '32S350G', 'supports_volume': True, 'type': 'TV', 'volume_percent': 33}]}"
+  },
+  {
+    "role": "assistant",
+    "content": "Unfortunately, both of the devices you currently have registered for music playback are marked as inactive. In order to play music on your TV, please make sure it is turned on and connected to your Spotify account."
+  }
+]
